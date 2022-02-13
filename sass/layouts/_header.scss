@@ -1,0 +1,50 @@
+.header {
+  background-image: linear-gradient(to top left, #28b485, #55c57a79),
+    url(img/hero.jpg);
+  width: 100%;
+  height: 100vh;
+  color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  img {
+    width: 10%;
+    margin: 2rem;
+  }
+  .box__main1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1rem;
+    gap: 2rem;
+    .header_title_top {
+      font-size: 4rem;
+      animation: titleTop 2s;
+    }
+    .header_title_bottom {
+      font-size: 3rem;
+      animation: titleBottom 2s;
+    }
+    .header__btn {
+      padding: 1rem;
+      border-radius: 2rem;
+      border: none;
+      animation: btn 2s;
+      position: relative;
+      &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: black;
+        top: 0;
+        left: 0;
+        border-radius: 2rem;
+        background-color: white;
+        z-index: -1;
+        animation: btn_1 1s infinite linear;
+      }
+    }
+  }
+}

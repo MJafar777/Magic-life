@@ -1,0 +1,22 @@
+{
+  "name": "advanced.css..",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss  style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mamurjon7191/advanced.css...git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mamurjon7191/advanced.css../issues"
+  },
+  "homepage": "https://github.com/mamurjon7191/advanced.css..#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
