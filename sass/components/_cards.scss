@@ -46,7 +46,7 @@
     }
 
     .side__img--1 {
-      background-image: url(/img/nat-5.jpg),
+      background-image: url(img/nat-5.jpg),
         linear-gradient(
           to right,
           $color-secondary-light-1,
@@ -129,7 +129,7 @@
   // first card finished
   // our second card started
   .side__img--2 {
-    background-image: url(/img/nat-7.jpg),
+    background-image: url(img/nat-7.jpg),
       linear-gradient(to right, $color-primary, $color-primary-light);
 
     clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
@@ -140,7 +140,7 @@
     -webkit-background-blend-mode: screen;
   }
   .side__img--3 {
-    background-image: url(/img/nat-6.jpg),
+    background-image: url(img/nat-6.jpg),
       linear-gradient(
         to right,
         $color-tertiary-light-1,
