@@ -1,7 +1,6 @@
 .row {
   max-width: $grid-width;
   margin: 0 auto;
-  width: 90%;
 
   &:not(:last-child) {
     margin-bottom: $space-vertical;

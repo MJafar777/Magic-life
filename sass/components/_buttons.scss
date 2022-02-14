@@ -9,14 +9,32 @@
     border-bottom: 1px solid $color-primary;
   }
 
-  &:hover{
+  &:hover {
     color: $color-white;
     padding: 3px;
     background-color: $color-primary;
     transform: translate(-0.5rem);
   }
 
-  &:active{
+  &:active {
     transform: translateY(0);
   }
+}
+.price__btn {
+  border-radius: 4rem;
+  padding: 2rem 3rem;
+  border: 0;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: $color-black;
+  background-color: $color-white;
+}
+.price__btn:hover {
+  background-color: #f0f0f0;
+}
+.price__btn:active {
+  transform: scale(1.1);
+  transition: all 0.2;
+  background-color: white;
+  outline: 0.2rem solid $color-primary;
 }

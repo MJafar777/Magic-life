@@ -3,7 +3,6 @@
   background-color: $color-grey-light-1;
   margin-top: -25vh;
   padding-bottom: 40rem;
-  
 }
 .section-typography {
   background-image: linear-gradient(to top left, #28b485a9, #55c57a65),
@@ -18,4 +17,10 @@
   & > * {
     transform: skewY(7deg);
   }
+}
+.section-price-card {
+  padding: 30rem 10rem;
+  background-color: $color-grey-light-1;
+  margin-top: -25vh;
+  padding-bottom: 40rem;
 }

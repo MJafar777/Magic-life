@@ -29,3 +29,129 @@
   transform: scale(1.1);
   transition: all 0.5s;
 }
+.cards {
+  height: 30rem;
+  position: relative;
+  perspective: 150rem;
+  &__side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    &--back {
+      transform: rotateY(-180deg);
+      backface-visibility: hidden;
+    }
+
+    .side__img--1 {
+      background-image: url(/img/nat-5.jpg),
+        linear-gradient(
+          to right,
+          $color-secondary-light-1,
+          $color-secondary-light-2
+        );
+
+      clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+      background-blend-mode: screen;
+      width: 100%;
+      background-size: cover;
+      height: 20rem;
+      -webkit-background-blend-mode: screen;
+      &-heading,
+      &-heading-2,
+      &-heading-3 {
+        text-transform: uppercase;
+        width: 10rem;
+        background-color: rgba($color-secondary-light-1, $alpha: 0.6);
+        text-align: center;
+        position: absolute;
+        right: 3rem;
+        line-height: 1.5;
+        padding: 0.5rem 1rem;
+        top: 13rem;
+        font-weight: 300;
+        text-align: end;
+        font-size: 1.6rem;
+        color: #fff;
+      }
+      &-heading-2 {
+        background-color: rgba($color-primary, $alpha: 0.6);
+      }
+      &-heading-3 {
+        background-color: rgba($color-tertiary-light-1, $alpha: 0.6);
+      }
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 2;
+      text-align: center;
+      width: 80%;
+      margin: 0 auto;
+      &:not(:last-child) {
+        border-bottom: 0.1px solid rgba(0, 0, 0, 0.137);
+      }
+    }
+    &-front {
+      z-index: 100;
+    }
+    &--back {
+      background-image: linear-gradient(
+        to right,
+        $color-primary,
+        $color-primary-light
+      );
+      p {
+        color: white;
+        padding: 5rem 0;
+        border-bottom: none;
+      }
+      h2 {
+        font-size: 5rem;
+        color: white;
+        padding: 5rem 0;
+      }
+      button {
+        margin-bottom: 1.8rem;
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+    transition: all 3s;
+  }
+  &:hover &__side--back {
+    transform: rotateY(0);
+    transition: all 3s;
+  }
+  // first card finished
+  // our second card started
+  .side__img--2 {
+    background-image: url(/img/nat-7.jpg),
+      linear-gradient(to right, $color-primary, $color-primary-light);
+
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    background-blend-mode: screen;
+    width: 100%;
+    background-size: cover;
+    height: 20rem;
+    -webkit-background-blend-mode: screen;
+  }
+  .side__img--3 {
+    background-image: url(/img/nat-6.jpg),
+      linear-gradient(
+        to right,
+        $color-tertiary-light-1,
+        $color-tertiary-light-2
+      );
+
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    background-blend-mode: screen;
+    width: 100%;
+    background-size: cover;
+    height: 20rem;
+    -webkit-background-blend-mode: screen;
+  }
+}
