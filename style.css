@@ -172,7 +172,7 @@ DarkGreen: #28b485
       transform: rotateY(-180deg);
       backface-visibility: hidden; }
     .cards__side .side__img--1 {
-      background-image: url(/img/nat-5.jpg), linear-gradient(to right, #ffb900, #ff7730);
+      background-image: url(img/nat-5.jpg), linear-gradient(to right, #ffb900, #ff7730);
       clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
       background-blend-mode: screen;
       width: 100%;
@@ -226,7 +226,7 @@ DarkGreen: #28b485
     transform: rotateY(0);
     transition: all 3s; }
   .cards .side__img--2 {
-    background-image: url(/img/nat-7.jpg), linear-gradient(to right, #7ed56f, #55c57a);
+    background-image: url(img/nat-7.jpg), linear-gradient(to right, #7ed56f, #55c57a);
     clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
     background-blend-mode: screen;
     width: 100%;
@@ -234,7 +234,7 @@ DarkGreen: #28b485
     height: 20rem;
     -webkit-background-blend-mode: screen; }
   .cards .side__img--3 {
-    background-image: url(/img/nat-6.jpg), linear-gradient(to right, #2998ff, #5643fa);
+    background-image: url(img/nat-6.jpg), linear-gradient(to right, #2998ff, #5643fa);
     clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
     background-blend-mode: screen;
     width: 100%;
