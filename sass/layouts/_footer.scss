@@ -1,0 +1,46 @@
+footer {
+  width: 100%;
+  height: 50rem;
+  background-color: #333;
+
+  img {
+    width: 15rem;
+    margin: 10rem 52rem;
+  }
+  .footer--menu {
+    width: 43rem;
+    margin-left: 3rem;
+    border-top: 2px solid white;
+    padding: 2rem 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .link--menu {
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: white;
+    }
+    .link--menu:hover {
+      background-color: #333;
+      box-shadow: 0 1px 5px black;
+      padding: 0.2rem 0.4px;
+      transform: scale(1.2) skewY(3deg);
+      transition: all 0.4s;
+      color: $color-primary-light;
+    }
+  }
+  .footer--about {
+    font-size: 1.6rem;
+    border-top: 2px solid white;
+    padding: 1rem 0px;
+    margin-left: 17rem;
+    color: white;
+  }
+  .footers--info {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
