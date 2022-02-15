@@ -26,6 +26,23 @@ DarkGreen: #28b485
     transform: skewY(2deg) skewX(15deg);
     text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); }
 
+.heading-secondary2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+  margin-left: -60rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 3rem; }
+  .heading-secondary2:hover {
+    transform: skew(10deg, 2deg); }
+
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
@@ -302,6 +319,43 @@ DarkGreen: #28b485
         transform: translate(-50%, -50%) translateY(0);
         opacity: 1; }
 
+.section__book--img {
+  background-image: linear-gradient(107deg, rgba(255, 255, 255, 0.788) 50%, transparent 50%), url(img/nat-10.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 80%;
+  background-position: center;
+  height: 90%;
+  margin: 0 auto; }
+
+.section__book--label {
+  font-size: 1.6rem;
+  padding: 1.5rem 1rem 1.2rem 1rem;
+  margin: 0rem 3rem;
+  transform: translateY(-5rem);
+  display: inline-block;
+  opacity: 0;
+  transition: all 0.5s; }
+
+.section__book--input {
+  display: block;
+  padding: 1.5rem 1rem 1.2rem 1rem;
+  font-size: 1.6rem;
+  width: 30rem;
+  margin: 0rem 3rem;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid white; }
+  .section__book--input:focus {
+    border-bottom: 3px solid green; }
+    .section__book--input:focus:invalid {
+      border-bottom: 3px solid orange; }
+  .section__book--input:not(:placeholder-shown) + .section__book--label {
+    transform: translateY(-1rem);
+    opacity: 1; }
+  .section__book--input-radio {
+    width: 4rem; }
+
 footer {
   width: 100%;
   height: 50rem;
@@ -380,6 +434,8 @@ footer {
   background-image: linear-gradient(to top left, #28b485, #55c57a79), url(img/hero.jpg);
   width: 100%;
   height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
   .header img {
@@ -446,6 +502,12 @@ footer {
 .section__stories {
   height: 100rem;
   padding: 30rem 5rem; }
+
+.section__book {
+  width: 100%;
+  height: 50rem;
+  padding: 10rem 0;
+  background-image: linear-gradient(to right, #7ed56f, #55c57a); }
 
 .u-text-center {
   text-align: center; }

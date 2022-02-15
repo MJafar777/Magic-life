@@ -3,6 +3,8 @@
     url(img/hero.jpg);
   width: 100%;
   height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   img {

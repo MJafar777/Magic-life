@@ -19,6 +19,28 @@
     text-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
   }
 }
+.heading-secondary2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-primary,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+  margin-left: -60rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  &:hover {
+    transform: skew(10deg, 2deg);
+  }
+}
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
@@ -31,4 +53,3 @@
     margin-bottom: 3rem;
   }
 }
-

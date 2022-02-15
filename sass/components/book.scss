@@ -1,0 +1,49 @@
+.section__book {
+  &--img {
+    background-image: linear-gradient(
+        107deg,
+        rgba(255, 255, 255, 0.788) 50%,
+        transparent 50%
+      ),
+      url(img/nat-10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    background-position: center;
+    height: 90%;
+    margin: 0 auto;
+  }
+  &--label {
+    font-size: 1.6rem;
+    padding: 1.5rem 1rem 1.2rem 1rem;
+    margin: 0rem 3rem;
+
+    transform: translateY(-5rem);
+    display: inline-block;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  &--input {
+    display: block;
+    padding: 1.5rem 1rem 1.2rem 1rem;
+    font-size: 1.6rem;
+    width: 30rem;
+    margin: 0rem 3rem;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid white;
+    &:focus {
+      border-bottom: 3px solid green;
+      &:invalid {
+        border-bottom: 3px solid orange;
+      }
+    }
+    &:not(:placeholder-shown) + .section__book--label {
+      transform: translateY(-1rem);
+      opacity: 1;
+    }
+    &-radio {
+      width: 4rem;
+    }
+  }
+}
