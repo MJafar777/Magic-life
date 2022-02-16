@@ -1,0 +1,218 @@
+.navigation {
+  &__checkbox {
+    display: none;
+  }
+  &__button {
+    background-color: $color-white;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    position: fixed;
+    cursor: pointer;
+    text-align: center;
+    z-index: 300;
+    box-shadow: 0 1.5rem 3rem rgba($color-black, 0.15);
+    top: 6rem;
+    right: 6rem;
+  }
+  &__background {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 200;
+    background-image: radial-gradient($color-primary, $color-primary-dark);
+    top: 6.5rem;
+    right: 6.5rem;
+    transition: all 1s;
+  }
+  &__checkbox:checked ~ &__background {
+    transform: scale(50);
+  }
+  &__menu {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 250;
+    opacity: 1;
+    width: 100%;
+    visibility: hidden;
+  }
+  &__list {
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    transform: translate(-50% -50%);
+    list-style: none;
+    text-align: center;
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.76, 0.27, 0.55, 1.36);
+  }
+  &__checkbox:checked ~ &__menu {
+    // width: 50%;
+    visibility: visible;
+  }
+  &__link {
+    &:link,
+    &:visited {
+      transition: all 0.5s;
+      display: inline-block;
+      font-size: 3rem;
+      text-decoration: none;
+      font-weight: 400;
+      padding: 1rem 2rem;
+      color: $color-white;
+      text-transform: uppercase;
+
+      background-image: linear-gradient(
+        105deg,
+        transparent 0%,
+        transparent 50%,
+        $color-white 50%
+      );
+      background-size: 220%;
+    }
+    &:hover,
+    &:active {
+      background-position: 100%;
+      transform: translateX(1rem);
+      color: $color-primary;
+    }
+  }
+  &__checkbox:checked ~ &__menu &__list {
+    left: 35%;
+    opacity: 1;
+  }
+  &__icon {
+    position: relative;
+    margin-top: 3.5rem;
+
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 5px;
+      background-color: $color-grey-dark;
+      display: inline-block;
+      transition: all 0.5s;
+    }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+
+      left: 0;
+    }
+    &::before {
+      top: 0.8rem;
+    }
+    &::after {
+      top: -0.8rem;
+    }
+  }
+  &__button:hover &__icon::after {
+    top: -1rem;
+  }
+  &__button:hover &__icon::before {
+    top: 1rem;
+  }
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+    &::before {
+      top: 0;
+      transform: rotate(135deg);
+    }
+    &::after {
+      top: 0;
+      transform: rotate(-135deg);
+    }
+  }
+}
+.navigation1 {
+  margin: 10rem auto;
+  position: relative;
+  height: 7rem;
+  font-size: 1.6rem;
+  width: 40rem;
+  display: flex;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.navigation1 ul {
+  display: flex;
+  width: 35rem;
+}
+
+.navigation1 ul li {
+  position: relative;
+  list-style: none;
+  width: 7rem;
+  height: 7rem;
+  z-index: 1;
+}
+.navigation1 ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  font-weight: 500;
+}
+.icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5em;
+  text-align: center;
+  transition: 0.5s;
+  color: rgba(0, 0, 0, 0.787);
+}
+.navigation1 ul li:hover a .icon {
+  transform: translateY(-2.5rem);
+}
+.navigation1 ul li a .text {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.787);
+  font-weight: 400;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  transform: translateY(2rem);
+  opacity: 0;
+}
+.navigation1 ul li:hover a .text {
+  opacity: 1;
+  transform: translateY(1rem);
+}
+.indicator {
+  position: absolute;
+  top: -50%;
+  border-radius: 50%;
+  border: 8px solid black;
+  width: 7rem;
+  height: 7rem;
+  background-color: #29fd53;
+  transition: 0.5s;
+}
+
+.navigation1 ul li:nth-child(1):hover ~ .indicator {
+  transform: translateX(calc(110px * 0));
+}
+.navigation1 ul li:nth-child(2):hover ~ .indicator {
+  transform: translateX(calc(110px * 1));
+}
+.navigation1 ul li:nth-child(3):hover ~ .indicator {
+  transform: translateX(calc(110px * 2));
+}
+.navigation1 ul li:nth-child(4):hover ~ .indicator {
+  transform: translateX(calc(110px * 3));
+}
+.navigation1 ul li:nth-child(5):hover ~ .indicator {
+  transform: translateX(calc(110px * 4));
+}

@@ -46,10 +46,40 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+.heading__tertiary2 {
+  font-size: 1.8rem;
+  color: gray;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 1rem;
+}
 
 .text-box {
   font-size: 1.6rem;
   &:not(:last-child) {
     margin-bottom: 3rem;
+  }
+}
+
+.heading__secondary {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  margin: 1rem;
+  background-image: linear-gradient(
+    to right,
+    $color-primary,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg);
+    text-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
   }
 }

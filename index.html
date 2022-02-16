@@ -9,6 +9,39 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="navigation">
+      <input
+        type="checkbox"
+        class="navigation__checkbox"
+        name=""
+        id="nav_check"
+      />
+      <label class="navigation__button" for="nav_check">
+        <span class="navigation__icon"></span>
+      </label>
+
+      <div class="navigation__background"></div>
+
+      <div class="navigation__menu">
+        <ul class="navigation__list">
+          <li class="navigation_item">
+            <a href="" class="navigation__link">01 About MagicLife</a>
+          </li>
+          <li class="navigation_item">
+            <a href="" class="navigation__link">02 Your Banefit</a>
+          </li>
+          <li class="navigation_item">
+            <a href="" class="navigation__link">03 Popular Tours</a>
+          </li>
+          <li class="navigation_item">
+            <a href="" class="navigation__link">04 Stories</a>
+          </li>
+          <li class="navigation_item">
+            <a href="" class="navigation__link">05 Book Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- our header started -->
     <div class="header">
       <img src="img/logo-white.png" alt="" />
@@ -142,7 +175,17 @@
               <div class="cards__side cards__side--back">
                 <p>ONLY</p>
                 <h2>$297</h2>
-                <button class="price__btn">BUY NOW!</button>
+                <a
+                  style="
+                    display: block;
+                    width: 10rem;
+                    text-decoration: none;
+                    margin: 1rem auto;
+                  "
+                  href="#popup"
+                  class="price__btn"
+                  >BUY NOW!</a
+                >
               </div>
             </div>
           </div>
@@ -162,7 +205,17 @@
               <div class="cards__side cards__side--back">
                 <p>ONLY</p>
                 <h2>$297</h2>
-                <button class="price__btn">BUY NOW!</button>
+                <a
+                  style="
+                    display: block;
+                    width: 10rem;
+                    text-decoration: none;
+                    margin: 1rem auto;
+                  "
+                  href="#popup"
+                  class="price__btn"
+                  >BUY NOW!</a
+                >
               </div>
             </div>
           </div>
@@ -182,7 +235,17 @@
               <div class="cards__side cards__side--back">
                 <p>ONLY</p>
                 <h2>$297</h2>
-                <button class="price__btn">BUY NOW!</button>
+                <a
+                  style="
+                    display: block;
+                    width: 10rem;
+                    text-decoration: none;
+                    margin: 1rem auto;
+                  "
+                  href="#popup"
+                  class="price__btn"
+                  >BUY NOW!</a
+                >
               </div>
             </div>
           </div>
@@ -295,6 +358,44 @@
       </div>
     </footer>
 
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#qqwwewse" class="popup--back">✕</a>
+          <h2 class="heading__secondary">Start booking now!</h2>
+          <h3 class="heading__tertiary2">
+            IMPORT - PLEACE READ THIS TERMS BEFORE BOOKING
+          </h3>
+          <div class="popup__text">
+            <p class="popup__text--one">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed
+              sed risus pretium quam. Aliquam sem et tortor consequat id.
+              Volutpat odio facilisis mauris sit amet massa vitae. Mi bibendum
+              neque egestas congue. Placerat orci nulla pellentesque dignissim
+              enim sit. Vitae semper quis lectus nulla at volutpat diam ut
+              venenatis. Malesuada pellentesque elit eget gravida cum sociis
+              natoque penatibus et.
+            </p>
+            <p class="popup__text--one">
+              Proin fermentum leo vel orci porta non pulvinar neque laoreet.
+              Gravida neque convallis a cras semper. Molestie at elementum eu
+              facilisis sed odio morbi quis. Faucibus vitae aliquet nec
+              ullamcorper sit amet risus nullam eget. Nam libero justo laoreet
+              sit. Amet massa vitae tortor condimentum lacinia quis vel eros
+              donec. Sit amet facilisis magna etiam. Imperdiet sed euismod nisi
+              porta.
+            </p>
+          </div>
+          <a href="#card" class="btn btn--green"></a>
+        </div>
+      </div>
+    </div>
+
     <!-- <section class="grid-test">
       <div class="row">
         <div class="col-1-of-2">This is a column 1 of 2</div>
@@ -325,5 +426,62 @@
         <div class="col-3-of-4">This is a column 3 of 4</div>
       </div>
     </section> -->
+
+    <section class="navigation1">
+      <div class="navigation1_navigation2">
+        <ul>
+          <li class="list">
+            <a href="#">
+              <span class="icon active">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="text">Home</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#">
+              <span class="icon">
+                <ion-icon name="person-outline"></ion-icon>
+              </span>
+              <span class="text">Profile</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#">
+              <span class="icon">
+                <ion-icon name="chatbubble-outline"></ion-icon>
+              </span>
+              <span class="text">Message</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#">
+              <span class="icon">
+                <ion-icon name="camera-outline"></ion-icon>
+              </span>
+              <span class="text">Photos</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#">
+              <span class="icon">
+                <ion-icon name="settings-outline"></ion-icon>
+              </span>
+              <span class="text">Settings</span>
+            </a>
+          </li>
+          <div class="indicator"></div>
+        </ul>
+      </div>
+
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+    </section>
   </body>
 </html>
